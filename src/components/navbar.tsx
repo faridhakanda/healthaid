@@ -49,11 +49,11 @@ const Navbar = () => {
         </div>
         {/** Here is the mobile responsive navbar with hamburger menu and close icon */}
         <div className="">
-            <div className="sm:flex md:flex lg:hidden xl:hidden 2xl:hidden justify-around bg-slate-50 text-slate-950 p-3">
-                <div>
+            <div className="sm:flex md:flex lg:hidden xl:hidden 2xl:hidden justify-between bg-slate-50 text-slate-950 p-3">
+                <div className="pl-4">
                     <Link href="/">HealthAid</Link>
                 </div>
-                <div onClick={() => setIsOpen(!isOpen)}>
+                <div className="pr-4" onClick={() => setIsOpen(!isOpen)}>
                         {!isOpen ? <Image src="/Hamenu.svg" alt="menuhm" width="32" height="32" /> : <Image src="/Haclose.svg" alt="close" width="32" height="32" />}       
                 </div>
             </div>
