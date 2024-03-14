@@ -29,7 +29,7 @@ const Navbar = () => {
         }
     ];
   return (
-    <div>
+    <div className="shadow-2xl shadow-slate-500">
         {/* Here is the desktop responsive navbar */}
         <div className={`bg-slate-50 text-slate-950 justify-around p-4 w-full h-16 sm:hidden md:hidden lg:flex xl:flex 2xl:flex`}>
             <div>
